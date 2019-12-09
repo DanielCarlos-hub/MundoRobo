@@ -15,7 +15,7 @@ public class Mundo {
     
     
     public Mundo(){
-        MatrizMundo = new int[11][11];
+        MatrizMundo = new int[12][12];
     }
    
     
@@ -23,10 +23,10 @@ public class Mundo {
         Random aleatorio = new Random();
         int objeto;
         int lata;
-        for(int i = 0; i < 11; i++){
-            for(int j = 0; j < 11; j++){
+        for(int i = 0; i < 12; i++){
+            for(int j = 0; j < 12; j++){
                 objeto = aleatorio.nextInt(2); // objetos aleatorios;
-                if(i == 0 || j == 0 || i == 10 || j == 10)
+                if(i == 0 || j == 0 || i == 11 || j == 11)
                     this.MatrizMundo[i][j] = 2;
                 else{
                     if(objeto == 1){ // verifica se foi sorteado uma lata

@@ -7,6 +7,7 @@ package mundorobo;
 
 import java.util.ArrayList;
 
+
 /**
  *
  * @author daniel
@@ -14,4 +15,22 @@ import java.util.ArrayList;
 public class Robo {
     private int pontos;
     private ArrayList<Integer> movimentos;
+    
+    public void setPontos(int pontos){
+        this.pontos = pontos;
+    }
+    public int getPontos(){
+        return pontos;
+    }
+    
+    public void setMovimentos(ArrayList<Integer> movimentos){
+        this.movimentos = movimentos;
+    }
+    public ArrayList<Integer> getMovimentos(){
+        return movimentos;
+    }
+    
+    
+    
+    
 }
